@@ -19,6 +19,8 @@ namespace OratileStudyGroup.Models
 
         [Display(Name = "EMAIL ADDRESS")]
         public string EmailAddress { get; set; }
+
+        public string myLink { get; set; }
     }
 }
 

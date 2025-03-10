@@ -38,7 +38,13 @@
         <td>
             @Html.DisplayFor(modelItem => item.EmailAddress)
         </td>
-       
+        <td>
+            <a href="@Url.Content(item.myLink)"
+               class="btn btn-primary btn-sm"
+               target="_blank">
+                LINK
+            </a>
+        </td>
     </tr>
 }
 

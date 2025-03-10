@@ -17,12 +17,21 @@
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Study Group", "List", "OratileStudyGroup", new { area = "" }, new { @class = "nav-link" })</li>
-
+                    <li class="nav-item">@Html.ActionLink("Simple Starting Sample", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            List of People
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @Html.ActionLink("Your Name", "Index", "People", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Friend 1", "Index", "People", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Friend 2", "Index", "People", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Friend 3", "Index", "People", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Friend 4", "Index", "People", new { area = "" }, new { @class = "dropdown-item" })
+                        </div>
+                    </li>
                 </ul>
+
             </div>
         </div>
     </nav>
